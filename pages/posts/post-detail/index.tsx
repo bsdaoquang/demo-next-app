@@ -16,7 +16,7 @@ const Index = (props: any) => {
           content="https://62eaa50bc810e8005fc78590--aquamarine-fox-4b628c.netlify.app/posts/post-detail"
         />
         <meta property="og:title" content={posts?.title} />
-        <meta property="og:description" content={posts?.body} />
+        <meta property="og:description" content={posts?.description} />
         <meta property="og:image" content={posts?.thumbnail} />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -25,7 +25,7 @@ const Index = (props: any) => {
           content="https://62eaa50bc810e8005fc78590--aquamarine-fox-4b628c.netlify.app/posts/post-detail"
         />
         <meta property="twitter:title" content={posts?.title} />
-        <meta property="twitter:description" content={posts?.body} />
+        <meta property="twitter:description" content={posts?.description} />
         <meta property="twitter:image" content={posts?.thumbnail} />
       </Head>
       <h1>{posts?.title as string}</h1>
