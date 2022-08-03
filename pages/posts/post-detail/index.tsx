@@ -8,7 +8,7 @@ const Index = (props: any) => {
       <Head>
         <title>{posts?.title}</title>
         <meta name="title" content={posts?.title} />
-        <meta name="description" content={posts?.body} />
+        <meta name="description" content={posts?.description} />
 
         <meta property="og:type" content="website" />
         <meta
@@ -34,7 +34,7 @@ const Index = (props: any) => {
 }
 
 //get data
-export const getStaticProps = async () => {
+export const setServerSideProps = async () => {
   const posts = await getPost()
 
   return {
