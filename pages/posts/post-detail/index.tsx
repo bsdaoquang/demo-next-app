@@ -21,8 +21,26 @@ const Index = () => {
     <div>
       <Head>
         <title>{post?.title}</title>
+        <meta name="title" content={post?.title} />
         <meta name="description" content={post?.description} />
-        <meta name="image" content={post?.thumbnail} />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://62eaa50bc810e8005fc78590--aquamarine-fox-4b628c.netlify.app/posts/post-detail"
+        />
+        <meta property="og:title" content={post?.title} />
+        <meta property="og:description" content={post?.description} />
+        <meta property="og:image" content={post?.thumbnail} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content="https://62eaa50bc810e8005fc78590--aquamarine-fox-4b628c.netlify.app/posts/post-detail"
+        />
+        <meta property="twitter:title" content={post?.title} />
+        <meta property="twitter:description" content={post?.description} />
+        <meta property="twitter:image" content={post?.thumbnail} />
       </Head>
       <h1>{post?.title as string}</h1>
     </div>
