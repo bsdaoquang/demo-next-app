@@ -34,9 +34,8 @@ const Index = (props: any) => {
 }
 
 //get data
-export const setServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const posts = await getPost()
-
   return {
     props: {
       posts,
